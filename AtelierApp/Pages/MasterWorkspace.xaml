@@ -1,0 +1,38 @@
+﻿<Page x:Class="AtelierApp.Pages.MasterWorkspace"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AtelierApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MasterWorkspace">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Рабочее место мастера-закройщика" 
+                   FontSize="24" FontWeight="Bold" Grid.Row="0" Margin="0,0,0,20"/>
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="Заказы в работе">
+                <ListView ItemsSource="{Binding OrdersInProgress}">
+                    <!-- Детали -->
+                </ListView>
+            </TabItem>
+            <TabItem Header="Назначение заданий">
+                <Grid>
+                    <!-- Назначение швей -->
+                </Grid>
+            </TabItem>
+            <TabItem Header="Контроль качества">
+                <Grid>
+                    <!-- Проверка готовых изделий -->
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>
