@@ -19,22 +19,22 @@
         <Grid Grid.Row="0" Background="Crimson" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="607" Margin="63,0,0,0">
                 <!-- Кнопки для всех авторизованных -->
-                <Button x:Name="NavServices" Margin="5,0" Padding="15,5" Width="82" Visibility="Collapsed">
-                    <TextBlock Text="Услуги" FontSize="12"/>
+                <Button x:Name="NavServices" Margin="5,0" Padding="15,5" Width="90" Visibility="Collapsed" Click="NavServices_Click">
+                    <TextBlock Text="Заказать" FontSize="12"/>
                 </Button>
-                <Button x:Name="NavProfile" Margin="5,0" Padding="15,5" Width="142" Visibility="Collapsed">
+                <Button x:Name="NavProfile" Margin="5,0" Padding="15,5" Width="142" Visibility="Collapsed" Click="NavProfile_Click">
                     <TextBlock  Text="Личный кабинет" FontSize="12" />
                 </Button>
                 <!-- Кнопки для администратора -->
-                <Button x:Name="NavAdminPanel" Margin="5,0" Padding="15,5" Visibility="Collapsed" Background="#e67e22" Width="188">
+                <Button x:Name="NavAdminPanel" Margin="5,0" Padding="15,5" Visibility="Collapsed" Background="#e67e22" Width="188" Click="NavAdminPanel_Click">
                     <TextBlock  Text="Панель администратора" FontSize="12" />
                 </Button>
                 <!-- Кнопки для мастера -->
-                <Button x:Name="NavMasterWorkspace" Margin="5,0" Padding="15,5" Visibility="Collapsed" Background="#3498db" Width="126">
+                <Button x:Name="NavMasterWorkspace" Margin="5,0" Padding="15,5" Visibility="Collapsed" Background="#3498db" Width="126" Click="NavMasterWorkspace_Click">
                     <TextBlock Text="Рабочее место мастера" FontSize="12"/>
                 </Button>
                 <!-- Кнопки для швеи -->
-                <Button x:Name="NavSeamstressWorkspace" Margin="5,0" Padding="15,5" Visibility="Collapsed" Background="#9b59b6">
+                <Button x:Name="NavSeamstressWorkspace" Margin="5,0" Padding="15,5" Visibility="Collapsed" Background="#9b59b6" Click="NavSeamstressWorkspace_Click">
                     <TextBlock Text="Мои задания" FontSize="12"/>
                 </Button>
             </StackPanel>

@@ -192,16 +192,20 @@ namespace AtelierApp.Pages
                     if (isCaptchaValid)
                     {
                         // Проверяем, является ли пользователь работником или клиентом
-                        var UserID = db.Users.FirstOrDefault(x => x.AuthorisationID == authorisation.ID).ID;
-                        var employee = db.Employees.FirstOrDefault(x => x.ID == UserID);
-                        var client = db.Clients.FirstOrDefault(x => x.ID == UserID);
+                        var user = db.Users.FirstOrDefault(x => x.AuthorisationID == authorisation.ID);
+
+                        // Получаем ссылку на главное окно
+                        var mainWindow = Application.Current.MainWindow as MainWindow;
+                        // Передаем пользователя и показываем навигационные кнопки
+                        if (mainWindow != null)
+                            mainWindow.SetCurrentUser(user);
 
                         ResetAuthorizationForm();
-                        if (employee != null && employee.PositionID == 2 || employee.PositionID == 4)
+                        if (user != null && user.Role == "Master")
                         {
                             NavigationService.Navigate(new MasterWorkspace());
                         }
-                        else if (employee != null && employee.PositionID == 3)
+                        else if (user != null && user.Role == "Seamstress")
                         {
                             NavigationService.Navigate(new SeamstressWorkspace());
                         }

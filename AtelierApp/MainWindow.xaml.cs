@@ -23,6 +23,7 @@ namespace AtelierApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private User _currentUser;
         public MainWindow()
         {
             InitializeComponent();
@@ -40,6 +41,80 @@ namespace AtelierApp
                 btnBack.Visibility = Visibility.Visible;
             else
                 btnBack.Visibility = Visibility.Hidden;
+        }
+        // Метод для установки пользователя после авторизации
+        internal void SetCurrentUser(User user)
+        {
+            _currentUser = user;
+            UpdateNavigationButtons();
+        }
+
+        // Обновление видимости кнопок навигации
+        private void UpdateNavigationButtons()
+        {
+            if (_currentUser != null)
+            {
+                // Показываем общие кнопки для всех авторизованных
+                NavServices.Visibility = Visibility.Visible;
+                NavProfile.Visibility = Visibility.Visible;
+
+                // Скрываем все кнопки по умолчанию
+                NavAdminPanel.Visibility = Visibility.Collapsed;
+                NavMasterWorkspace.Visibility = Visibility.Collapsed;
+                NavSeamstressWorkspace.Visibility = Visibility.Collapsed;
+
+                // Показываем кнопки в зависимости от роли
+                switch (_currentUser.Role)
+                {
+                    case "admin":
+                        NavAdminPanel.Visibility = Visibility.Visible;
+                        break;
+                    case "master":
+                        NavMasterWorkspace.Visibility = Visibility.Visible;
+                        break;
+                    case "seamstress":
+                        NavSeamstressWorkspace.Visibility = Visibility.Visible;
+                        break;
+                }
+            }
+        }
+
+        // Обработчики навигационных кнопок
+        private void NavServices_Click(object sender, RoutedEventArgs e)
+        {
+            FrmMain.Navigate(new CreateOrder());
+        }
+
+        private void NavProfile_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentUser != null)
+            {
+                FrmMain.Navigate(new Account());
+            }
+        }
+
+        private void NavAdminPanel_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentUser != null && _currentUser.Role == "admin")
+            {
+                FrmMain.Navigate(new Account());
+            }
+        }
+
+        private void NavMasterWorkspace_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentUser != null && _currentUser.Role == "master")
+            {
+                FrmMain.Navigate(new MasterWorkspace());
+            }
+        }
+
+        private void NavSeamstressWorkspace_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentUser != null && _currentUser.Role == "seamstress")
+            {
+                FrmMain.Navigate(new SeamstressWorkspace());
+            }
         }
     }
 }
