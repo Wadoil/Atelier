@@ -70,8 +70,6 @@
             <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="Зарегистрироваться"  
                         Width="150" Height="35" Margin="0,0,10,0"/>
-                <Button Content="Отмена"  
-                        Width="100" Height="35"/>
             </StackPanel>
         </Grid>
     </ScrollViewer>

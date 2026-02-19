@@ -21,9 +21,10 @@
                                   Margin="0,0,0,10"/>
 
                         <StackPanel Orientation="Horizontal">
-                            <Button Content="Добавить услугу" 
-                                    Command="{Binding AddServiceCommand}"
-                                    Padding="10,5" Margin="0,0,10,0"/>
+                            <Button Command="{Binding AddServiceCommand}"
+                                    Padding="10,5" Margin="0,0,10,0" Width="133">
+                                <TextBlock Text="Добавить услугу" FontSize="12"/>
+                            </Button>
                             <TextBlock Text="Количество:" VerticalAlignment="Center" Margin="0,0,5,0"/>
                             <TextBox Text="{Binding Quantity}" Width="50"/>
                         </StackPanel>
@@ -70,9 +71,11 @@
                     </StackPanel>
                 </GroupBox>
 
-                <Button Content="Оформить заказ" Command="{Binding CreateOrderCommand}" 
-                        Height="40" FontSize="16" FontWeight="Bold"
-                        IsEnabled="{Binding CanCreateOrder}"/>
+                <Button Command="{Binding CreateOrderCommand}" 
+                        Height="40" FontWeight="Bold"
+                        IsEnabled="{Binding CanCreateOrder}">
+                    <TextBlock Text="Оформить заказ" FontSize="12"/>
+                </Button>
 
                 <TextBlock Text="{Binding StatusMessage}" Foreground="{Binding StatusColor}" 
                            Margin="0,10,0,0" TextWrapping="Wrap"/>
