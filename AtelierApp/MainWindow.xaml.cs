@@ -100,7 +100,7 @@ namespace AtelierApp
         {
             if (_currentUser != null && _currentUser.Role == "admin")
             {
-                FrmMain.Navigate(new Account());
+                FrmMain.Navigate(new AdminMaterials());
             }
         }
 
@@ -116,7 +116,7 @@ namespace AtelierApp
         {
             if (_currentUser != null && _currentUser.Role == "seamstress")
             {
-                FrmMain.Navigate(new SeamstressWorkspace());
+                FrmMain.Navigate(new SeamstressWorkspace(_currentUser));
             }
         }
     }

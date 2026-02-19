@@ -3,48 +3,72 @@
   "WorkspaceRootPath": "D:\\college\\practice\\db\\AtelierApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\masterworkspace.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\masterworkspace.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\masterworkspace.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\masterworkspace.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\seamstressworkspace.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\seamstressworkspace.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\authorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\authorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\authorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\authorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\authorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\models\\authorizations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\models\\authorizations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\materialdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\materialdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\masterworkspace.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\masterworkspace.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\adminmaterials.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\adminmaterials.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\seamstressworkspace.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\seamstressworkspace.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\adminmaterials.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\adminmaterials.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\materialdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\materialdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\createorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\createorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\models\\materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\models\\materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\seamstressworkspace.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\seamstressworkspace.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\seamstressworkspace.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\seamstressworkspace.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|d:\\college\\practice\\db\\atelierapp\\atelierapp\\pages\\masterworkspace.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\masterworkspace.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\models\\authorizations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\models\\authorizations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\pages\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -63,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\pages\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|D:\\college\\practice\\db\\AtelierApp\\atelierapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038032D3-9B59-4692-AE55-C7B396DBC541}|AtelierApp\\AtelierApp.csproj|solutionrelative:atelierapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -78,11 +98,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Materials.cs",
+              "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Models\\Materials.cs",
+              "RelativeDocumentMoniker": "AtelierApp\\Models\\Materials.cs",
+              "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Models\\Materials.cs",
+              "RelativeToolTip": "AtelierApp\\Models\\Materials.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T13:10:15.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MaterialDialog.xaml.cs",
+              "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\MaterialDialog.xaml.cs",
+              "RelativeDocumentMoniker": "AtelierApp\\Pages\\MaterialDialog.xaml.cs",
+              "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\MaterialDialog.xaml.cs",
+              "RelativeToolTip": "AtelierApp\\Pages\\MaterialDialog.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T13:08:12.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MaterialDialog.xaml",
+              "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\MaterialDialog.xaml",
+              "RelativeDocumentMoniker": "AtelierApp\\Pages\\MaterialDialog.xaml",
+              "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\MaterialDialog.xaml",
+              "RelativeToolTip": "AtelierApp\\Pages\\MaterialDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-19T13:08:03.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "AdminMaterials.xaml.cs",
+              "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\AdminMaterials.xaml.cs",
+              "RelativeDocumentMoniker": "AtelierApp\\Pages\\AdminMaterials.xaml.cs",
+              "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\AdminMaterials.xaml.cs",
+              "RelativeToolTip": "AtelierApp\\Pages\\AdminMaterials.xaml.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAAGgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T13:07:02.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminMaterials.xaml",
+              "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\AdminMaterials.xaml",
+              "RelativeDocumentMoniker": "AtelierApp\\Pages\\AdminMaterials.xaml",
+              "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\AdminMaterials.xaml",
+              "RelativeToolTip": "AtelierApp\\Pages\\AdminMaterials.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-19T13:06:53.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\App.xaml",
               "RelativeDocumentMoniker": "AtelierApp\\App.xaml",
@@ -94,20 +177,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "MasterWorkspace.xaml.cs",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\MasterWorkspace.xaml.cs",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\MasterWorkspace.xaml.cs",
               "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\MasterWorkspace.xaml.cs",
               "RelativeToolTip": "AtelierApp\\Pages\\MasterWorkspace.xaml.cs",
-              "ViewState": "AgIAAD4BAAAAAAAAAAAgwFEBAABAAAAAAAAAAA==",
+              "ViewState": "AgIAADwBAAAAAAAAAAAQwEYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T12:08:43.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
               "Title": "MasterWorkspace.xaml",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\MasterWorkspace.xaml",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\MasterWorkspace.xaml",
@@ -119,20 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SeamstressWorkspace.xaml.cs",
-              "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\SeamstressWorkspace.xaml.cs",
-              "RelativeDocumentMoniker": "AtelierApp\\Pages\\SeamstressWorkspace.xaml.cs",
-              "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\SeamstressWorkspace.xaml.cs",
-              "RelativeToolTip": "AtelierApp\\Pages\\SeamstressWorkspace.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T12:07:08.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "SeamstressWorkspace.xaml",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\SeamstressWorkspace.xaml",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\SeamstressWorkspace.xaml",
@@ -144,31 +214,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
+              "Title": "SeamstressWorkspace.xaml.cs",
+              "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\SeamstressWorkspace.xaml.cs",
+              "RelativeDocumentMoniker": "AtelierApp\\Pages\\SeamstressWorkspace.xaml.cs",
+              "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\SeamstressWorkspace.xaml.cs",
+              "RelativeToolTip": "AtelierApp\\Pages\\SeamstressWorkspace.xaml.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T12:07:08.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CreateOrder.xaml",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\CreateOrder.xaml",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\CreateOrder.xaml",
               "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\CreateOrder.xaml",
               "RelativeToolTip": "AtelierApp\\Pages\\CreateOrder.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-19T11:48:14.088Z"
+              "WhenOpened": "2026-02-19T11:48:14.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "AtelierApp\\MainWindow.xaml.cs",
               "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "AtelierApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAASwG4AAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAIAwwGYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T09:36:18.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "Service.cs",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Models\\Service.cs",
               "RelativeDocumentMoniker": "AtelierApp\\Models\\Service.cs",
@@ -180,18 +264,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "Account.xaml",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\Account.xaml",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\Account.xaml",
               "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\Account.xaml",
               "RelativeToolTip": "AtelierApp\\Pages\\Account.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-19T12:02:05.614Z"
+              "WhenOpened": "2026-02-19T12:02:05.614Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "CreateOrder.xaml.cs",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\CreateOrder.xaml.cs",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\CreateOrder.xaml.cs",
@@ -203,20 +288,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Authorization.xaml.cs",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\Authorization.xaml.cs",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\Authorization.xaml.cs",
               "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\Authorization.xaml.cs",
               "RelativeToolTip": "AtelierApp\\Pages\\Authorization.xaml.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAowMcAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAIAwwM8AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T10:37:21.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Authorization.xaml",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\Authorization.xaml",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\Authorization.xaml",
@@ -228,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "Registration.xaml.cs",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\Registration.xaml.cs",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\Registration.xaml.cs",
@@ -236,12 +321,11 @@
               "RelativeToolTip": "AtelierApp\\Pages\\Registration.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T09:29:23.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T09:29:23.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Authorizations.cs",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Models\\Authorizations.cs",
               "RelativeDocumentMoniker": "AtelierApp\\Models\\Authorizations.cs",
@@ -249,35 +333,34 @@
               "RelativeToolTip": "AtelierApp\\Models\\Authorizations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T10:49:45.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T10:49:45.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Registration.xaml",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\Registration.xaml",
               "RelativeDocumentMoniker": "AtelierApp\\Pages\\Registration.xaml",
               "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Pages\\Registration.xaml",
               "RelativeToolTip": "AtelierApp\\Pages\\Registration.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-19T10:59:27.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T10:59:27.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "AtelierApp\\MainWindow.xaml",
               "ToolTip": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\MainWindow.xaml",
               "RelativeToolTip": "AtelierApp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-19T09:49:12.508Z"
+              "WhenOpened": "2026-02-19T09:49:12.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\college\\practice\\db\\AtelierApp\\AtelierApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "AtelierApp\\Models\\User.cs",

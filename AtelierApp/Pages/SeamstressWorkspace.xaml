@@ -13,6 +13,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="Мои задания" FontSize="24" FontWeight="Bold" 
@@ -20,28 +21,117 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10">
             <TextBlock Text="Фильтр:" VerticalAlignment="Center" Margin="0,0,5,0"/>
-            <ComboBox ItemsSource="{Binding Statuses}" SelectedItem="{Binding SelectedStatus}"
-                      Width="150" Margin="0,0,10,0"/>
-            <Button Content="Показать" Command="{Binding FilterCommand}" Padding="10,5"/>
+            <ComboBox x:Name="StatusFilterComboBox" 
+                      Width="150" Margin="0,0,10,0"
+                      SelectionChanged="StatusFilter_SelectionChanged"/>
+            <Button Content="Обновить" Click="RefreshButton_Click" Padding="10,5"/>
         </StackPanel>
 
-        <ListView Grid.Row="2" ItemsSource="{Binding MyTasks}">
+        <ListView x:Name="MyTasksListView" Grid.Row="2">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="№ заказа" DisplayMemberBinding="{Binding OrderID}" Width="80"/>
-                    <GridViewColumn Header="Описание" DisplayMemberBinding="{Binding Description}" Width="300"/>
-                    <GridViewColumn Header="Срок" DisplayMemberBinding="{Binding Deadline, StringFormat={}{0:dd.MM.yyyy}}" Width="100"/>
-                    <GridViewColumn Header="Статус" DisplayMemberBinding="{Binding StatusName}" Width="120"/>
-                    <GridViewColumn Header="Действие">
+                    <GridViewColumn Header="№ заказа" Width="80">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Content="Выполнено" Command="{Binding DataContext.CompleteTaskCommand, RelativeSource={RelativeSource AncestorType=Page}}"
-                                        CommandParameter="{Binding ID}"/>
+                                <TextBlock Text="{Binding OrderId}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Клиент" Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding ClientName}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Услуги" Width="200">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Services}" TextWrapping="Wrap"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Описание" Width="200">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Статус" Width="120">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding StatusName}">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding StatusName}" Value="Новый">
+                                                    <Setter Property="Foreground" Value="Gray"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding StatusName}" Value="В работе">
+                                                    <Setter Property="Foreground" Value="Orange"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding StatusName}" Value="Готов к примерке">
+                                                    <Setter Property="Foreground" Value="Blue"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding StatusName}" Value="Готов к выдаче">
+                                                    <Setter Property="Foreground" Value="Green"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Срок" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DisplayDeadline}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Стоимость" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DisplayCost}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Действия" Width="180">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Выполнено" 
+                                            Tag="{Binding OrderId}"
+                                            Click="CompleteTask_Click"
+                                            Background="LightGreen"
+                                            Margin="2"
+                                            Width="70"/>
+                                    <Button Content="Детали" 
+                                            Tag="{Binding OrderId}"
+                                            Click="ViewDetails_Click"
+                                            Background="LightBlue"
+                                            Margin="2"
+                                            Width="70"/>
+                                </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
+
+        <!-- Статус сообщение -->
+        <TextBlock x:Name="StatusTextBlock" Grid.Row="3"
+                   Margin="0,10,0,0" TextWrapping="Wrap"
+                   Visibility="Collapsed"/>
     </Grid>
 </Page>

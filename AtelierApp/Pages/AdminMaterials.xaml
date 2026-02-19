@@ -1,0 +1,122 @@
+﻿<Page x:Class="AtelierApp.Pages.AdminMaterials"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AtelierApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="Управление материалами">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Управление материалами" 
+                   FontSize="24" FontWeight="Bold" 
+                   Grid.Row="0" Margin="0,0,0,20"/>
+
+        <!-- Панель поиска и фильтрации -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10">
+            <TextBlock Text="Поиск:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox x:Name="SearchTextBox" Width="250" 
+                     TextChanged="SearchTextBox_TextChanged"
+                     Margin="0,0,10,0"/>
+
+            <TextBlock Text="Категория:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <ComboBox x:Name="CategoryFilterComboBox" 
+                      Width="150" 
+                      SelectionChanged="CategoryFilter_SelectionChanged"
+                      Margin="0,0,10,0"/>
+
+            <Button Content="Сбросить фильтры" 
+                    Click="ClearFilters_Click" 
+                    Padding="10,5"/>
+        </StackPanel>
+
+        <!-- Таблица материалов -->
+        <ListView x:Name="MaterialsListView" Grid.Row="2" 
+                  SelectionMode="Single"
+                  MouseDoubleClick="MaterialsListView_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding ID}"/>
+                    <GridViewColumn Header="Артикул" Width="100" DisplayMemberBinding="{Binding Article}"/>
+                    <GridViewColumn Header="Наименование" Width="200" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Категория" Width="120" DisplayMemberBinding="{Binding CategoryName}"/>
+                    <GridViewColumn Header="Цвет" Width="100" DisplayMemberBinding="{Binding Color}"/>
+                    <GridViewColumn Header="Ед. изм." Width="70" DisplayMemberBinding="{Binding UnitName}"/>
+                    <GridViewColumn Header="Количество" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding CurrentAmount}">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsLowStock}" Value="True">
+                                                    <Setter Property="Foreground" Value="Red"/>
+                                                    <Setter Property="FontWeight" Value="Bold"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Мин. запас" Width="80" DisplayMemberBinding="{Binding MinimalAmountForReplenishment}"/>
+                    <GridViewColumn Header="Цена" Width="100" DisplayMemberBinding="{Binding Price, StringFormat={}{0:C}}"/>
+                    <GridViewColumn Header="Поставщик" Width="150" DisplayMemberBinding="{Binding SupplierName}"/>
+                    <GridViewColumn Header="Действия" Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="✏️" 
+                                            Tag="{Binding ID}"
+                                            Click="EditMaterial_Click"
+                                            Background="LightBlue"
+                                            Margin="2"
+                                            Width="30"
+                                            ToolTip="Редактировать"/>
+                                    <Button Content="🗑️" 
+                                            Tag="{Binding ID}"
+                                            Click="DeleteMaterial_Click"
+                                            Background="LightPink"
+                                            Margin="2"
+                                            Width="30"
+                                            ToolTip="Удалить"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!-- Панель с кнопками действий -->
+        <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="➕ Добавить материал" 
+                    Click="AddMaterial_Click" 
+                    Padding="15,8" 
+                    Margin="0,0,10,0"
+                    Background="LightGreen"/>
+            <Button Content="📦 Заказать у поставщика" 
+                    Click="OrderFromSupplier_Click" 
+                    Padding="15,8"
+                    Background="LightYellow"/>
+        </StackPanel>
+
+        <!-- Статус сообщение -->
+        <TextBlock x:Name="StatusTextBlock" Grid.Row="3" 
+                   Margin="0,10,0,0" 
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Left"
+                   TextWrapping="Wrap" 
+                   Visibility="Collapsed"/>
+    </Grid>
+</Page>

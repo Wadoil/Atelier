@@ -91,3 +91,7 @@ D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\AtelierApp.exe
 D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\AtelierApp.pdb
 D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\AtelierApp.exe.config
 D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\AtelierApp.csproj.SuggestedBindingRedirects.cache
+D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\MaterialDialog.baml
+D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\AdminMaterials.g.cs
+D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\MaterialDialog.g.cs
+D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\AdminMaterials.baml

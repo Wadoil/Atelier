@@ -201,7 +201,11 @@ namespace AtelierApp.Pages
                         }
                         else if (user != null && user.Role == "seamstress")
                         {
-                            NavigationService.Navigate(new SeamstressWorkspace());
+                            NavigationService.Navigate(new SeamstressWorkspace(user));
+                        }
+                        else if (user != null && user.Role == "admin")
+                        {
+                            NavigationService.Navigate(new AdminMaterials());
                         }
                         else
                         {
