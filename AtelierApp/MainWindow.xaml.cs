@@ -82,7 +82,10 @@ namespace AtelierApp
         // Обработчики навигационных кнопок
         private void NavServices_Click(object sender, RoutedEventArgs e)
         {
-            FrmMain.Navigate(new CreateOrder());
+            if (_currentUser != null)
+            {
+                FrmMain.Navigate(new CreateOrder(_currentUser));
+            }
         }
 
         private void NavProfile_Click(object sender, RoutedEventArgs e)

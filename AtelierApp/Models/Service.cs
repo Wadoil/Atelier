@@ -15,6 +15,7 @@ namespace AtelierApp.Models
         [Required]
         [MaxLength(200)]
         public string Name { get; set; }
+        public decimal Price { get; set; }
         public ICollection<OrderService> OrderServices { get; set; }
     }
 }

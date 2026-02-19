@@ -48,10 +48,6 @@ namespace AtelierApp.Pages
             lblCaptcha.Visibility = Visibility.Collapsed;
         }
 
-        private void btnEnterGuests_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new CreateOrder());
-        }
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {   
             NavigationService.Navigate(new Registration());
@@ -125,7 +121,6 @@ namespace AtelierApp.Pages
         private void LockUI()
         {
             btnEnter.IsEnabled = false;
-            btnEnterGuests.IsEnabled = false;
             txtLogin.IsEnabled = false;
             pswbPassword.IsEnabled = false;
             txtBoxCaptcha.IsEnabled = false;
@@ -138,7 +133,6 @@ namespace AtelierApp.Pages
         private void UnlockUI()
         {
             btnEnter.IsEnabled = true;
-            btnEnterGuests.IsEnabled = true;
             txtLogin.IsEnabled = true;
             pswbPassword.IsEnabled = true;
             txtBoxCaptcha.IsEnabled = true;
