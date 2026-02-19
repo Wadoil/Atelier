@@ -195,11 +195,11 @@ namespace AtelierApp.Pages
                             mainWindow.SetCurrentUser(user);
 
                         ResetAuthorizationForm();
-                        if (user != null && user.Role == "Master")
+                        if (user != null && user.Role == "master")
                         {
-                            NavigationService.Navigate(new MasterWorkspace());
+                            NavigationService.Navigate(new MasterWorkspace(user));
                         }
-                        else if (user != null && user.Role == "Seamstress")
+                        else if (user != null && user.Role == "seamstress")
                         {
                             NavigationService.Navigate(new SeamstressWorkspace());
                         }

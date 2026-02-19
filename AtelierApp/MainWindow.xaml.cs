@@ -108,7 +108,7 @@ namespace AtelierApp
         {
             if (_currentUser != null && _currentUser.Role == "master")
             {
-                FrmMain.Navigate(new MasterWorkspace());
+                FrmMain.Navigate(new MasterWorkspace(_currentUser));
             }
         }
 
