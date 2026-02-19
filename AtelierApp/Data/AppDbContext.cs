@@ -14,7 +14,7 @@ namespace AtelierApp.Data
     internal class AppDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<Authorization> Authorizations { get; set; }
+        public DbSet<Authorizations> Authorizations { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Position> Positions { get; set; }
@@ -99,7 +99,7 @@ namespace AtelierApp.Data
             base.OnModelCreating(modelBuilder);
 
             // Уникальные индексы
-            modelBuilder.Entity<Authorization>()
+            modelBuilder.Entity<Authorizations>()
                 .HasIndex(a => a.Login)
                 .IsUnique();
 

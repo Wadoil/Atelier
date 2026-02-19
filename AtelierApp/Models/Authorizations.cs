@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AtelierApp.Models
 {
-    internal class Authorization
+    internal class Authorizations
     {
         [Key]
         public int ID { get; set; }

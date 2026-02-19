@@ -316,7 +316,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Authorization.cs" />
+    <Compile Include="Models\Authorizations.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\MaterialCategories.cs" />

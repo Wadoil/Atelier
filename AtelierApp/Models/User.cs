@@ -43,7 +43,7 @@ namespace AtelierApp.Models
 
         // Навигационные свойства
         [ForeignKey("AuthorisationID")]
-        public virtual Authorization Authorisation { get; set; }
+        public virtual Authorizations Authorisation { get; set; }
 
         public virtual Client Client { get; set; }
         public virtual Employee Employee { get; set; }
