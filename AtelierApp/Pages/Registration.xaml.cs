@@ -109,7 +109,7 @@ namespace AtelierApp.Pages
                     if (mainWindow != null)
                     {
                         mainWindow.SetCurrentUser(user);
-                        NavigationService.Navigate(new Account());
+                        NavigationService.Navigate(new Account(user));
                     }
                 }
             }

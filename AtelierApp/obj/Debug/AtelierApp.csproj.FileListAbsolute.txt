@@ -95,3 +95,5 @@ D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\MaterialDialog.baml
 D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\AdminMaterials.g.cs
 D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\MaterialDialog.g.cs
 D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\AdminMaterials.baml
+D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\ChangePasswordDialog.baml
+D:\college\practice\db\AtelierApp\AtelierApp\obj\Debug\Pages\ChangePasswordDialog.g.cs

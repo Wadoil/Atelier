@@ -279,6 +279,9 @@
     <Compile Include="Pages\AdminMaterials.xaml.cs">
       <DependentUpon>AdminMaterials.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ChangePasswordDialog.xaml.cs">
+      <DependentUpon>ChangePasswordDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MaterialDialog.xaml.cs">
       <DependentUpon>MaterialDialog.xaml</DependentUpon>
     </Compile>
@@ -305,6 +308,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Authorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ChangePasswordDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

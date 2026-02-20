@@ -153,7 +153,6 @@ namespace AtelierApp.Pages
                 {
                     // Логин и пароль верные, просим пройти капчу
                     tries = 1;
-                    MessageBox.Show("Пройдите капчу для завершения входа.");
                     GenerateCaptcha();
                 }
                 else
@@ -209,7 +208,7 @@ namespace AtelierApp.Pages
                         }
                         else
                         {
-                            NavigationService.Navigate(new Account());
+                            NavigationService.Navigate(new Account(new User()));
                         }
                     }
                     else if (!isCaptchaValid)

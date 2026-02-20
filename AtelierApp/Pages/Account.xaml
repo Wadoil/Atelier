@@ -5,82 +5,136 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AtelierApp.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="550" d:DesignWidth="800"
       Title="Личный кабинет">
 
-    <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="20">
-                <TextBlock Text="Личный кабинет" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+    <!-- ScrollViewer для вертикальной прокрутки -->
+    <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                  HorizontalScrollBarVisibility="Disabled"
+                  PanningMode="VerticalOnly">
 
-                <GroupBox Header="Персональные данные" Margin="0,0,0,20">
-                    <StackPanel>
-                        <Grid Margin="0,5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="150"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-                            <TextBlock Grid.Column="0" Text="Фамилия:" VerticalAlignment="Center" Margin="0,0,5,0"/>
-                            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding User.Surname}" IsReadOnly="True" Background="#F0F0F0" Margin="0,5,0,5"/>
+            <!-- Заголовок -->
+            <TextBlock Text="Личный кабинет" 
+                       FontSize="24" FontWeight="Bold" 
+                       Grid.Row="0" Margin="0,0,0,20"/>
 
-                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Имя:" VerticalAlignment="Center" Margin="0,5,0,0"/>
-                            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding User.Name}" IsReadOnly="True" Background="#F0F0F0" Margin="0,5,0,0"/>
+            <!-- Персональные данные -->
+            <GroupBox Header="Персональные данные" Grid.Row="1" Margin="0,0,0,20">
+                <StackPanel>
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
 
-                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Отчество:" VerticalAlignment="Center" Margin="0,5,0,0"/>
-                            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding User.MiddleName}" IsReadOnly="True" Background="#F0F0F0" Margin="0,5,0,0"/>
+                        <!-- Фамилия -->
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Фамилия:" VerticalAlignment="Center" Margin="0,0,5,5"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="SurnameTextBlock" 
+                                   VerticalAlignment="Center" Margin="0,0,0,5"/>
 
-                            <TextBlock Grid.Row="3" Grid.Column="0" Text="Email:" VerticalAlignment="Center" Margin="0,5,0,0"/>
-                            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding User.Email}" IsReadOnly="True" Background="#F0F0F0" Margin="0,5,0,0"/>
+                        <!-- Имя -->
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Имя:" VerticalAlignment="Center" Margin="0,5,5,5"/>
+                        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="NameTextBlock" 
+                                   VerticalAlignment="Center" Margin="0,5,0,5"/>
 
-                            <TextBlock Grid.Row="4" Grid.Column="0" Text="Телефон:" VerticalAlignment="Center" Margin="0,5,0,0"/>
-                            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding User.PhoneNumber, UpdateSourceTrigger=PropertyChanged}" Margin="0,5,0,0"/>
-                        </Grid>
+                        <!-- Отчество -->
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Отчество:" VerticalAlignment="Center" Margin="0,5,5,5"/>
+                        <TextBlock Grid.Row="2" Grid.Column="1" x:Name="MiddleNameTextBlock" 
+                                   VerticalAlignment="Center" Margin="0,5,0,5"/>
 
-                        <TextBlock Text="Адрес доставки:" Margin="0,10,0,5"/>
-                        <TextBox Text="{Binding Client.Address, UpdateSourceTrigger=PropertyChanged}" 
-                             Height="60" TextWrapping="Wrap" AcceptsReturn="True"/>
+                        <!-- Email -->
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Email:" VerticalAlignment="Center" Margin="0,5,5,5"/>
+                        <TextBlock Grid.Row="3" Grid.Column="1" x:Name="EmailTextBlock" 
+                                   VerticalAlignment="Center" Margin="0,5,0,5"/>
 
-                        <Button Content="Сохранить изменения" Command="{Binding SaveProfileCommand}" 
-                            HorizontalAlignment="Right" Margin="0,10,0,0" Padding="10,5"/>
-                    </StackPanel>
-                </GroupBox>
+                        <!-- Телефон -->
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Телефон:" VerticalAlignment="Center" Margin="0,5,5,5"/>
+                        <TextBox Grid.Row="4" Grid.Column="1" x:Name="PhoneTextBox" 
+                                 Margin="0,5,0,5" Height="30"/>
 
-                <GroupBox Header="Безопасность" Margin="0,0,0,20">
-                    <StackPanel>
-                        <Button Content="Сменить пароль..." Command="{Binding ChangePasswordCommand}" 
-                            HorizontalAlignment="Left" Padding="10,5"/>
-                    </StackPanel>
-                </GroupBox>
+                        <!-- Адрес -->
+                        <TextBlock Grid.Row="5" Grid.Column="0" Text="Адрес:" VerticalAlignment="Center" Margin="0,5,5,5"/>
+                        <TextBox Grid.Row="5" Grid.Column="1" x:Name="AddressTextBox" 
+                                 Height="60" TextWrapping="Wrap" AcceptsReturn="True" 
+                                 Margin="0,5,0,5"/>
+                    </Grid>
 
-                <GroupBox Header="Последние заказы">
-                    <ListView ItemsSource="{Binding RecentOrders}" Height="200">
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn Header="№ заказа" DisplayMemberBinding="{Binding ID}" Width="80"/>
-                                <GridViewColumn Header="Дата" DisplayMemberBinding="{Binding OrderDate, StringFormat={}{0:dd.MM.yyyy}}" Width="100"/>
-                                <GridViewColumn Header="Статус" DisplayMemberBinding="{Binding StatusName}" Width="120"/>
-                                <GridViewColumn Header="Стоимость" DisplayMemberBinding="{Binding Cost, StringFormat={}{0:C}}" Width="100"/>
-                                <GridViewColumn Header="Действие">
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate>
-                                            <Button Content="Подробнее" Command="{Binding DataContext.ViewOrderDetailsCommand, RelativeSource={RelativeSource AncestorType=Page}}"
-                                                CommandParameter="{Binding ID}"/>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
-                </GroupBox>
-            </StackPanel>
-        </ScrollViewer>
-    </Grid>
+                    <Button Content="Сохранить" 
+                            Click="SaveProfile_Click"
+                            HorizontalAlignment="Right" 
+                            Margin="0,10,0,0" 
+                            Padding="15,8"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Безопасность -->
+            <GroupBox Header="Безопасность" Grid.Row="2" Margin="0,0,0,20">
+                <StackPanel>
+                    <Button Content="Сменить пароль" 
+                            Click="ChangePassword_Click"
+                            HorizontalAlignment="Left" 
+                            Padding="15,8" Width="151"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Последние заказы -->
+            <GroupBox Header="Последние заказы" Grid.Row="3" Margin="0,0,0,20">
+                <ListView x:Name="RecentOrdersListView" Height="200">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="№ заказа" Width="80" DisplayMemberBinding="{Binding ID}"/>
+                            <GridViewColumn Header="Дата" Width="100">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding OrderDate, StringFormat={}{0:dd.MM.yyyy}}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Услуги" Width="200" DisplayMemberBinding="{Binding Services}"/>
+                            <GridViewColumn Header="Статус" Width="120" DisplayMemberBinding="{Binding StatusName}"/>
+                            <GridViewColumn Header="Стоимость" Width="100">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Cost, StringFormat={}{0:C}}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Действие" Width="100">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Подробнее" 
+                                                Tag="{Binding ID}"
+                                                Click="ViewOrderDetails_Click"
+                                                Padding="5,2"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </GroupBox>
+
+            <!-- Статус сообщение -->
+            <TextBlock x:Name="StatusTextBlock" Grid.Row="4"
+                       Margin="0,10,0,20" TextWrapping="Wrap"
+                       Visibility="Collapsed"/>
+        </Grid>
+    </ScrollViewer>
 </Page>

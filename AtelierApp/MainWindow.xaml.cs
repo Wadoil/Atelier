@@ -92,7 +92,7 @@ namespace AtelierApp
         {
             if (_currentUser != null)
             {
-                FrmMain.Navigate(new Account());
+                FrmMain.Navigate(new Account(_currentUser));
             }
         }
 

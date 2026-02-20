@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\college\practice\db\AtelierApp\AtelierApp\App.xaml
-9-1219274892
+10-368985745
 
-311611747075
+32-2099788788
 1531858041584
-MainWindow.xaml;Pages\Account.xaml;Pages\AdminMaterials.xaml;Pages\Authorization.xaml;Pages\CreateOrder.xaml;Pages\MasterWorkspace.xaml;Pages\MaterialDialog.xaml;Pages\Registration.xaml;Pages\SeamstressWorkspace.xaml;
+MainWindow.xaml;Pages\Account.xaml;Pages\AdminMaterials.xaml;Pages\Authorization.xaml;Pages\ChangePasswordDialog.xaml;Pages\CreateOrder.xaml;Pages\MasterWorkspace.xaml;Pages\MaterialDialog.xaml;Pages\Registration.xaml;Pages\SeamstressWorkspace.xaml;
 
 False
 
